@@ -1,0 +1,89 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+  }
+  .team > .container {
+    max-width: 1158px;
+  }
+  .costumers > .container {
+    max-width: 1158px;
+  }
+  .costumers-list {
+    gap: 24px;
+  }
+  .costumers-list .costumers-list-item {
+    width: 168px;
+    height: 88px;
+  }
+  .advantage {
+    padding: 120px 0px;
+  }
+  .advantage-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 112px;
+    background: var(--main-color);
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+
+  .advantage-link {
+    background: var(--main-color);
+    border-radius: 4px;
+  }
+
+  .advantage .advantage-list {
+    gap: 24px;
+  }
+  .advantage-list-item {
+    width: 264px;
+    height: 224px;
+  }
+  .advantage-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .advantage-text {
+    font-weight: 400;
+  }
+
+  .about .about-img-list {
+    display: flex;
+  }
+
+  .about-img-list {
+    gap: var(--determined-ident);
+  }
+
+  .about {
+    padding-bottom: var(--specific-ident);
+    display: block;
+  }
+
+  .about-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--twice-color);
+    padding-bottom: 72px;
+  }
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image: var(--gradient), url(../img/hero-desktop.jpg);
+    max-width: 1440px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: var(--gradient), url(../img/hero-desktop-2x.jpg);
+    }
+  }
+}

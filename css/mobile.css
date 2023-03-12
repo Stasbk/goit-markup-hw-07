@@ -1,0 +1,45 @@
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 428px;
+  }
+  .mobile-soc-list {
+    gap: 56px;
+    /* justify-content: space-between; */
+  }
+  .mobile-contact-mail {
+    /* margin-left: 40px; */
+  }
+  .mobile-phone-number {
+    /* margin-left: 40px; */
+    font-size: 36px;
+    line-height: 1.11;
+    text-transform: capitalize;
+    color: #434455;
+  }
+  .mobile-menu-contacts {
+    padding-right: 0;
+  }
+
+  .hero-title {
+    font-size: 36px;
+    line-height: 1.11;
+  }
+  .team > .container {
+    max-width: 294px;
+  }
+  .costumers-list {
+    gap: 72px 16px;
+  }
+  .modal {
+    width: 408px;
+  }
+  .check-text {
+    font-size: 12px;
+  }
+  .modal-comment {
+    width: 360px;
+  }
+  .online-input {
+    width: 398px;
+  }
+}

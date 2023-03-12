@@ -16,11 +16,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
 
   <body class="page-body">
     <header class="page-header">
-      <div class="container">
+      <div class="container container-header">
         <div class="header-fulllogo">
           <a href="./index.html" class="header-logo header-studio link"
             ><span class="header-logo header-web">Web</span>Studio</a
@@ -61,6 +64,81 @@
             >+11 (000) 111-11-11</a
           >
         </div>
+        <button type="button" data-menu-open class="mobile-menu-open">
+          <svg class="menu-open-btn" width="30" height="20">
+            <use href="./img/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu is-hidden" data-menu>
+        <button type="button" data-menu-close class="btn-close-mobile">
+          <svg class="menu-close-icon" width="8" height="8">
+            <use href="./img/icons.svg#icon-close-menu"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="list-mobile-menu list">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link current" href="">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-contacts">
+          <address>
+            <ul class="mobile-menu-contacts list">
+              <li class="mobile-menu-contacts">
+                <a class="mobile-phone-number link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-menu-contacts">
+                <a
+                  class="mobile-contact-mail link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mobile-social-list list">
+            <li class="mobile-social-item">
+              <a href="" class="mobile-social-link link">
+                <svg class="mobile-social-icon" width="20" height="20">
+                  <use href="./img/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a href="" class="mobile-social-link link">
+                <svg class="mobile-social-icon" width="20" height="20">
+                  <use href="./img/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a href="" class="mobile-social-link link">
+                <svg class="mobile-social-icon" width="20" height="20">
+                  <use href="./img/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a href="" class="mobile-social-link link">
+                <svg class="mobile-social-icon" width="20" height="20">
+                  <use href="./img/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -75,7 +153,6 @@
         </div>
       </section>
       <section class="advantage">
-        <!--Нашi переваги-->
         <div class="container">
           <ul class="advantage-list list">
             <li class="advantage-list-item">
@@ -134,10 +211,17 @@
           <h2 class="about-title">What are we doing</h2>
           <ul class="about-img-list list">
             <li class="about-img-item">
-              <img class="img" src="./img/pc.jpg" alt="codding" width="360" />
+              <img
+                class="img"
+                srcset="./img/pc.jpg 1x, ./img/pc-2x.jpg 2x"
+                src="./img/pc.jpg"
+                alt="codding"
+                width="360"
+              />
             </li>
             <li class="about-img-item">
               <img
+                srcset="./img/smartphones.jpg 1x, ./img/smartphones-2x.jpg 2x"
                 class="img"
                 src="./img/smartphones.jpg"
                 alt="app"
@@ -146,6 +230,7 @@
             </li>
             <li class="about-img-item">
               <img
+                srcset="./img/devices.jpg 1x, ./img/devices-2x.jpg 2x"
                 class="img"
                 src="./img/devices.jpg"
                 alt="graphic"
@@ -160,7 +245,13 @@
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-list-item">
-              <img class="img" src="./img/mark.jpg" alt="igor" width="264" />
+              <img
+                class="img"
+                srcset="./img/mark.jpg 1x, ./img/mark-2x.jpg 2x"
+                src="./img/mark.jpg"
+                alt="mark"
+                width="264"
+              />
               <div class="team-person">
                 <h3 class="team-list-title">Mark Guerrero</h3>
                 <p class="team-list-text">Product Designer</p>
@@ -197,7 +288,13 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img class="img" src="./img/tom.jpg" alt="olga" width="264" />
+              <img
+                class="img"
+                srcset="./img/tom.jpg 1x, ./img/tom-2x.jpg 2x"
+                src="./img/tom.jpg"
+                alt="tom"
+                width="264"
+              />
               <div class="team-person">
                 <h3 class="team-list-title">Tom Ford</h3>
                 <p class="team-list-text">Frontend Developer</p>
@@ -236,8 +333,9 @@
             <li class="team-list-item">
               <img
                 class="img"
+                srcset="./img/camila.jpg 1x, ./img/camila-2x.jpg 2x"
                 src="./img/camila.jpg"
-                alt="mikola"
+                alt="camila"
                 width="264"
               />
               <div class="team-person">
@@ -277,9 +375,10 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="./img/daniel.jpg 1x, ./img/daniel-2x.jpg 2x"
                 class="img"
                 src="./img/daniel.jpg"
-                alt="mihaylo"
+                alt="daniel"
                 width="264"
               />
               <div class="team-person">
@@ -522,5 +621,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
