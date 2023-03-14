@@ -2,6 +2,9 @@
   .container {
     max-width: 428px;
   }
+
+  /* Mobile menu */
+
   .mobile-soc-list {
     gap: 56px;
     /* justify-content: space-between; */
@@ -19,6 +22,8 @@
   .mobile-menu-contacts {
     padding-right: 0;
   }
+
+  /* Main */
 
   .hero-title {
     font-size: 36px;

@@ -51,6 +51,8 @@
     font-weight: 400;
   }
 
+  /* About */
+
   .about .about-img-list {
     display: flex;
   }
@@ -85,5 +87,29 @@
     .hero {
       background-image: var(--gradient), url(../img/hero-desktop-2x.jpg);
     }
+  }
+
+  /* Footer styles */
+  .page-footer {
+    padding: 100px 0;
+    margin: 0 auto;
+  }
+  .footer-flex {
+    display: flex;
+    margin: 0 auto;
+    column-gap: 0;
+  }   
+
+  .footer-description {
+    margin-right: 120px;
+  }
+  .footer-tagline {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 264px;
+  }
+  .footer-social{
+    margin-right:80px;
   }
 }
