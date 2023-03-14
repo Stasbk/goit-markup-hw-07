@@ -50,23 +50,6 @@ body {
   color: var(--brand-color);
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.no-scroll {
-  overflow: hidden;
-}
-
 .current {
   position: relative;
   color: var(--darkblue-color);
@@ -74,28 +57,23 @@ body {
 
 /* header styles */
 
-.container-header{
+.container-header {
   display: flex;
   align-items: center;
 }
 
-.page-header{
-  border-bottom: 1px solid #E7E9FC;
-}
-
-.current {
-  position: relative;
-  color: #404BBF;
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color:#2E2F42;
+  color: #2e2f42;
   text-decoration: none;
   margin-right: 76px;
   padding-top: 24px;
@@ -114,7 +92,6 @@ body {
   display: none;
   margin-left: auto;
 }
-
 
 /* Mob-menu */
 
@@ -159,6 +136,7 @@ body {
 .mobile-phone-number {
   font-weight: 600;
   font-style: normal;
+  color: #434455;
   transition: color 250ms var(--timing-function);
 }
 .mobile-menu-open {
@@ -168,7 +146,7 @@ body {
   height: 32px;
   background-color: transparent;
   border: none;
-  /* margin-left: auto; */
+  margin-left: auto;
 }
 .menu-open-btn {
   stroke: black;
@@ -204,14 +182,13 @@ body {
 }
 .mobile-social-list {
   display: flex;
-  justify-content: center;
   margin-top: 48px;
-  gap: 30px;
+  gap: 40px;
 }
 
 .mobile-social-item {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 .mobile-menu-link:hover,
 .mobile-menu-link:focus {
@@ -302,11 +279,11 @@ body {
   text-align: center;
   color: var(--white-color);
   margin-bottom: 72px;
-  
 }
 
 /* Modal */
 .backdrop {
+  overflow: scroll;
   position: fixed;
   top: 0;
   width: 100%;
@@ -335,13 +312,17 @@ body {
   overflow: hidden;
 }
 
+.backdroup.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0) rotate(360deg);
+}
+
 .modal {
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) scale(1) rotate(0);
-  width: 408px;
-  min-height: 576px;
+  top: 10px;
+  transform: translate(-50%) scale(1) rotate(0);
+  width: calc(100% - 2 * 15px);
+  min-height: 584px;
   background-color: #fcfcfc;
   border-radius: 4px;
   padding: 24px;
@@ -365,6 +346,9 @@ body {
   transition: color 250ms var(--timing-function),
     background-color 250ms var(--timing-function);
   margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-close-icon {
@@ -450,13 +434,11 @@ body {
   outline: transparent;
   padding: 8px 16px;
   resize: none;
-  /* color: rgba(117, 117, 117, 0.5); */
 }
 
 .modal-input-icon {
   margin-left: 16px;
   position: absolute;
-  /* left: 16; */
   top: 50%;
   transform: translateY(-50%);
   color: var(--triple-color);

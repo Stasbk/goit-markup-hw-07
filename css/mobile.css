@@ -7,17 +7,16 @@
 
   .mobile-soc-list {
     gap: 56px;
-    /* justify-content: space-between; */
   }
-  .mobile-contact-mail {
-    /* margin-left: 40px; */
+  .mobile-social-item {
+    width: 40px;
+    height: 40px;
   }
+
   .mobile-phone-number {
-    /* margin-left: 40px; */
     font-size: 36px;
     line-height: 1.11;
     text-transform: capitalize;
-    color: #434455;
   }
   .mobile-menu-contacts {
     padding-right: 0;
@@ -37,7 +36,7 @@
     gap: 72px 16px;
   }
   .modal {
-    width: 408px;
+    width: 392px;
   }
   .check-text {
     font-size: 12px;
