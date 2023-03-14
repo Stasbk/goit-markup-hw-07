@@ -349,12 +349,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #000000;
 }
 
 .modal-close-icon {
   margin: auto;
   display: block;
   justify-content: center;
+  fill:#000000;
 }
 
 .modal-close:is(:hover, :focus) {
@@ -868,7 +870,6 @@ body {
 }
 
 .accent {
-  /* IRIS */
   color: #4d5ae5;
 }
 
