@@ -2,9 +2,52 @@
   .container {
     max-width: 1158px;
   }
+
+  /* Header Styles */
+
+  .address-list {
+    display: flex;
+    align-items: center;
+    padding: 0 0;
+    gap: 40px;
+  }
+
+  .logo {
+    margin-right: 76px;
+  }
+
+  .header-list {
+    margin-right: 332px;
+  }
+
+  .header-list-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+
+  .header-mail-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+
+  .header-tel-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+
+  /* Team */
   .team > .container {
     max-width: 1158px;
   }
+
+  /* Costumers */
+
   .costumers > .container {
     max-width: 1158px;
   }
@@ -15,6 +58,9 @@
     width: 168px;
     height: 88px;
   }
+
+  /* Advantage */
+
   .advantage {
     padding: 120px 0px;
   }
@@ -98,7 +144,7 @@
     display: flex;
     margin: 0 auto;
     column-gap: 0;
-  }   
+  }
 
   .footer-description {
     margin-right: 120px;
@@ -109,7 +155,7 @@
     line-height: 24px;
     width: 264px;
   }
-  .footer-social{
-    margin-right:80px;
+  .footer-social {
+    margin-right: 80px;
   }
 }
